@@ -1,0 +1,7 @@
+@mixin flexprob($par1, $par2) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $par2;
+  }
+  

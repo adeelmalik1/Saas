@@ -1,0 +1,32 @@
+@import "mixin";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// operators..
+// +, -, %, / and other 
+// variables..
+$bg-color: #fff;
+// nesting..
+// mixing..
+//parameters
+
+header{
+  background-color: $bg-color;
+  padding: 10px;
+}
+nav{
+  @include flexprob;
+  background-color: green;
+  color:white;
+  h1{
+    @include flexprob(3rem,red);
+  }
+  ul li {
+    display: inline-block;
+    margin: 1rem + 1rem;
+    cursor: pointer;
+  }
+}
